@@ -1,11 +1,9 @@
 package com.example.lenovo.myapplication;
 
 import android.graphics.BitmapFactory;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.RelativeLayout;
 
 import com.example.lenovo.myapplication.banner.components.HomeAutoScrollBanner;
 import com.example.lenovo.myapplication.banner.models.BannerV1;
@@ -26,6 +24,5 @@ public class MainActivity extends AppCompatActivity {
         list.add(new BannerV1(2, BitmapFactory.decodeResource(getResources(),R.drawable.banner2)));
         list.add(new BannerV1(3, BitmapFactory.decodeResource(getResources(),R.drawable.banner3)));
         homeAutoScrollBanner.showBannerViews(list);
-//        ((ImageView)findViewById(R.id.image)).setImageBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.banner1));
     }
 }

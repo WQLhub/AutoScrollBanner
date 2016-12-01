@@ -1,4 +1,4 @@
-package com.example.lenovo.myapplication.banner.components;
+package com.example.lenovo.myapplication.banner.components.indicator;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -7,6 +7,7 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.example.lenovo.myapplication.banner.components.indicator.LoopBezierPageIndicator;
 import com.example.lenovo.myapplication.banner.utils.ScreenUtil;
 
 /**

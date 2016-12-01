@@ -3,16 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.example.lenovo.myapplication.MainActivity">
-
     <com.example.lenovo.myapplication.banner.components.HomeAutoScrollBanner
         android:id="@+id/auto_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <!--<ImageView-->
-        <!--android:id="@+id/image"-->
-        <!--android:src="@drawable/banner1"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="100dp" />-->
 </RelativeLayout>

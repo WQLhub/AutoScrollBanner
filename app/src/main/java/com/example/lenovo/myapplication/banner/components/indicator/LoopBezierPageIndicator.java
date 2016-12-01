@@ -1,4 +1,4 @@
-package com.example.lenovo.myapplication.banner.components;
+package com.example.lenovo.myapplication.banner.components.indicator;
 
 import android.content.Context;
 import android.content.res.Resources;

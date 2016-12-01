@@ -2,8 +2,6 @@ package com.example.lenovo.myapplication.banner.components;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
@@ -15,10 +13,15 @@ import android.widget.RelativeLayout;
 
 import com.example.lenovo.myapplication.R;
 import com.example.lenovo.myapplication.banner.components.ViewPagerTransformers.StackTransformer;
+import com.example.lenovo.myapplication.banner.components.adapters.HomeLoopBannerAdapter;
+import com.example.lenovo.myapplication.banner.components.adapters.InfinitePagerAdapter;
+import com.example.lenovo.myapplication.banner.components.indicator.LoopHomeBezierPageIndicator;
+import com.example.lenovo.myapplication.banner.components.viewpagers.LoopViewPager;
 import com.example.lenovo.myapplication.banner.models.BannerV1;
 import com.example.lenovo.myapplication.banner.utils.ScreenUtil;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -51,7 +54,6 @@ public class HomeAutoScrollBanner extends RelativeLayout{
         init(context);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public void setIndicatorBg(int color){
         mPageIndicator.setIsDrawBg(true);
         mPageIndicator.setBackground(null);
@@ -71,7 +73,7 @@ public class HomeAutoScrollBanner extends RelativeLayout{
         setSliderTransformDuration(mTransformerSpan,new LinearInterpolator());//600ms看起来很舒服
 //        setSliderTransformDuration(mTransformerSpan, null);//2000ms看起来很舒服  走stack增强动画
 
-        LayoutParams lp = (LayoutParams) mViewPager.getLayoutParams();
+        RelativeLayout.LayoutParams lp = (RelativeLayout.LayoutParams) mViewPager.getLayoutParams();
         lp.width = ScreenUtil.WIDTH;
         lp.height = lp.width * 250 / 720;
     }

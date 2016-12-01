@@ -4,12 +4,12 @@
        android:layout_width="fill_parent"
        android:layout_height="wrap_content">
 
-    <com.example.lenovo.myapplication.banner.components.LoopViewPager
+    <com.example.lenovo.myapplication.banner.components.viewpagers.LoopViewPager
         android:id="@+id/vp_ad_view_pager"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         />
-    <com.example.lenovo.myapplication.banner.components.LoopHomeBezierPageIndicator
+    <com.example.lenovo.myapplication.banner.components.indicator.LoopHomeBezierPageIndicator
         android:id="@+id/idc_ad_indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

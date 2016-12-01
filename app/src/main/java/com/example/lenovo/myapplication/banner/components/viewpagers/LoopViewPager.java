@@ -1,9 +1,11 @@
-package com.example.lenovo.myapplication.banner.components;
+package com.example.lenovo.myapplication.banner.components.viewpagers;
 
 import android.content.Context;
 import android.os.Message;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+
+import com.example.lenovo.myapplication.banner.components.viewpagers.NoScrollViewPager;
 
 import java.util.Timer;
 import java.util.TimerTask;

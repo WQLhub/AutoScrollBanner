@@ -1,9 +1,12 @@
-package com.example.lenovo.myapplication.banner.components;
+package com.example.lenovo.myapplication.banner.components.adapters;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.lenovo.myapplication.banner.components.BannerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +62,7 @@ public class HomeLoopBannerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup view, int position) {
+        Log.d("qjb ","position :"+position);
         BannerView bannerView = mViews.get(position);
         View v = bannerView.getView();
         view.addView(v);

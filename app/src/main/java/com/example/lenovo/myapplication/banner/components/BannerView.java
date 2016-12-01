@@ -10,9 +10,10 @@ import android.widget.RelativeLayout;
 
 import com.example.lenovo.myapplication.R;
 import com.example.lenovo.myapplication.banner.models.BannerV1;
+import com.example.lenovo.myapplication.banner.utils.ScreenUtil;
 
 /**
- * Created by lenovo on 2016/6/23.
+ * Created by qjb on 2016/6/23.
  */
 public class BannerView extends RelativeLayout {
     protected Context mContext;
@@ -35,9 +36,12 @@ public class BannerView extends RelativeLayout {
     }
 
     public View getView(){
-        View v = LayoutInflater.from(mContext).inflate(R.layout.home_banner_view,this);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.home_banner_view,null);
         imageView = (ImageView) v.findViewById(R.id.iv_banner);
         loadView();
+        LayoutParams lp = (LayoutParams) imageView.getLayoutParams();
+        lp.width = ScreenUtil.WIDTH;
+        lp.height = lp.width*250/720;
         if(listener != null){
             imageView.setOnClickListener(new OnClickListener() {
                 @Override
@@ -68,5 +72,6 @@ public class BannerView extends RelativeLayout {
 
     private void loadView(){
         imageView.setImageBitmap(banner.bitmap);
+        imageView.setBackgroundColor(mContext.getResources().getColor(R.color.colorPrimary));
     }
 }

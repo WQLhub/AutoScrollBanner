@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.example.lenovo.myapplication.banner.components;
+package com.example.lenovo.myapplication.banner.components.indicator;
 
 import android.support.v4.view.ViewPager;
 

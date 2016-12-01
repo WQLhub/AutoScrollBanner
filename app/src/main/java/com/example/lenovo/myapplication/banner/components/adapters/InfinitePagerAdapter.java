@@ -1,9 +1,11 @@
-package com.example.lenovo.myapplication.banner.components;
+package com.example.lenovo.myapplication.banner.components.adapters;
 
 import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.lenovo.myapplication.banner.components.BannerView;
 
 public class InfinitePagerAdapter extends PagerAdapter {
 

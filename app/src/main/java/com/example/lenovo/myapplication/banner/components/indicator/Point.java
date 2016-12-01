@@ -1,4 +1,4 @@
-package com.example.lenovo.myapplication.banner.components;
+package com.example.lenovo.myapplication.banner.components.indicator;
 
 public class Point {
 
